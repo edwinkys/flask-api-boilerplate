@@ -1,0 +1,9 @@
+# Development
+.vscode
+.env
+.venv
+__pycache__
+
+
+# Misc.
+.DS_Store

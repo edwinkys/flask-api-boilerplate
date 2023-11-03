@@ -1,0 +1,6 @@
+# Framework.
+Flask==3.0.0
+Flask-Cors==4.0.0
+
+# Misc.
+python-dotenv==1.0.0
