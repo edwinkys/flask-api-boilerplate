@@ -14,16 +14,18 @@ To get started, use this repository as a template and install the dependencies u
 pip install -r requirements.txt
 ```
 
-To run the API, use the following command:
+Before running the app, make sure to have the environment variable from the `.env.sample` file set up in the `.env` file.
 
-Before running the command, make sure to have the environment variable from the `.env.sample` file set up in the `.env` file.
+To run the API project on your local machine, use the following command:
 
 ```bash
 flask run # or python application.py
 ```
 
-This will start the API on localhost:5000.
+This will start the API on localhost:5000. Please note that this command is only for development purposes. For production, use a WSGI server such as Gunicorn.
 
-You can use your favorite API client to test the API.
+If you send a GET request to the root endpoint, you should get the following response:
 
-Try to send a `GET` request to the `/` endpoint, the default healthcheck endpoint. This should return `200` if set up properly.
+```json
+{ "status": "functional" }
+```
